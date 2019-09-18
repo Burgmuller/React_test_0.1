@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url('./fonts/Roboto/Roboto-Regular.woff2') format('woff2'), url("./fonts/Roboto/Roboto-Regular.woff") format("woff"), url("./fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto-Thin";
+    src: url('./fonts/Roboto/Roboto-Thin.woff2') format('woff2'), url("./fonts/Roboto/Roboto-Thin.woff") format("woff"), url("./fonts/Roboto/Roboto-Thin.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+$font-heading: 'Roboto-Regular';
+$font-subheading: 'Roboto-Regular';
+$font-body: 'Roboto-Regular';
+html, body {
+    overflow: hidden;
+    font-family: "Roboto", Arial, sans-serif;
+}
+p, li, span, b, i, u, button {
+    font-family: $font-body;
+    font-size: 1em;
+}
+h1, h2, h3 {
+    font-family: $font-heading;
+    color: $color-grey;
+}
+.menu a {
+    color: $color-grey;
+}
+@media only screen and (max-width: $breakpoint-tablet-l) {
+    p, li, span, b, i, u, button {
+        font-size: .9em;
+    }
+}

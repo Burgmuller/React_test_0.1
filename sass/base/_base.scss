@@ -1,0 +1,196 @@
+input:focus,
+select:focus,
+select:active, 
+select:hover,
+textarea:focus,
+button:focus,
+*:focus {
+    outline: none !important;
+}
+
+input:focus {
+    outline: 0;
+}
+#root {
+    height: 100vh;
+    overflow-y: auto;
+    .main > div {
+        max-width: 1280px;
+        display: block;
+        margin: 0 auto;
+        &.top-bar,
+        &.orbit {
+            background-color: $color-brown;
+            max-width: none;
+            input {
+                margin-right: 0;
+            }
+        }
+        &.orbit {
+            & + div {
+                margin-top: 2.5rem;
+            }
+        }
+        &.top-bar .row {
+            margin: 40px auto 1rem;
+            .page-logo {
+                margin-bottom: 1rem;
+            }
+        }
+        img.thumbnail {
+            width: 100%;
+            border: 0;
+        }
+        .orbit-container {
+            min-height: 35vh;
+            max-height: 35vh;
+            .docs-example-orbit-slide {
+                padding: 2rem 4rem;
+                color: $color-white;
+            }
+        }
+        .callout.small {
+            padding: 0 0 1rem;
+            border: 0;
+        }
+        .column {
+            margin-bottom: 1rem;
+        }
+        .callout.secondary {
+            display: inline-block;
+            text-align: center;
+            width: calc(100% - 2rem);
+            margin-top: 2.5rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            border: 0;
+            h2 {
+                color: $color-grey;
+                margin-bottom: 3rem;
+            }
+            .column {
+                text-align: center;
+            }
+            .button {
+                margin-top: 3rem;
+            }
+        }
+        ul.menu {
+            li {
+                &:first-child a {
+                    padding-left: .5rem;
+                }
+            }
+        }
+        &.categories {
+            h2 {
+                text-align: center;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+            }
+            ul {
+                list-style: none;
+                li {
+                    img.thumbnail {
+                        box-shadow: none;
+                    }
+                    p {
+                        color: $color-grey;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    footer.callout.secondary {
+        background-color: $color-dgrey;
+        position: relative;
+        width: 100%;
+        float: left;
+        margin: 2.5rem 0 0;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        border: 0;
+        .row {
+            max-width: 78rem;
+            color: $color-white;
+            position: relative;
+            a {
+                color: $color-white;
+            }
+            .column {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            ul.menu {
+                margin-top: 5rem;
+                li {
+                    font-size: .9em;
+                    position: relative;
+                    &:first-child a {
+                        padding-left: 0;
+                        color: $color-white;
+                    }
+                    a {
+                        padding: .7rem .5rem;
+                    }
+                    &:after {
+                        content: '/';
+                        position: absolute;
+                        right: -.2rem;
+                        top: .5rem;
+                    }
+                    &:last-child:after {
+                        display: none;
+                    }
+                }
+            }
+            .email {
+                margin-top: -10px;
+                margin-bottom: 20px;
+            }
+            i {
+                font-style: normal;
+                &.foo-call {
+                    font-size: 1.7rem;
+                }
+                &.foo-call-num {
+                    font-size: 2rem;
+                    font-weight: 600;
+                    margin-left: .5rem;
+                }
+                &.foo-email,
+                &.foo-email-txt {
+                    font-size: 1.5rem;
+                }
+                &.foo-email {
+                    font-weight: 600;
+                    margin-right: .5rem;
+                }
+            }
+            ul.social {
+                list-style: none;
+                li {
+                    float: left;
+                    width: 10%;
+                    margin-right: .5rem;
+                    position: relative;
+                    i {
+                        color: $color-white;
+                    }
+                    &:after {
+                        content: '|';
+                        position: absolute;
+                        font-size: 2em;
+                        top: -.3em;
+                        right: .3em;
+                        color: $color-grey;
+                    }
+                    &:last-child:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

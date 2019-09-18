@@ -1,0 +1,47 @@
+.button {
+    background-color: $color-green;
+    cursor: pointer;
+    font-size: 1rem;
+    &:focus, &:hover {
+        opacity: .8;
+        background-color: $color-green;
+    }
+    &.expanded {
+        width: auto;
+        font-size: 1rem;
+        max-width: 170px;
+        height: 40px;
+        margin: 0;
+        text-align: left;
+    }
+    &.search-btn {
+        background-color: $color-grey;
+        height: 39px;
+        padding: 10px 12px;
+    }
+}
+.owl-carousel {
+    .owl-dots {
+        position: absolute;
+        z-index: 999;
+        right: 20%;
+        top: 85%;
+        .owl-dot {
+            display: block;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background-color: $color-white;
+            border: $color-white solid 2px;
+            float: left;
+            margin-right: 10px;
+            &.active {
+                opacity: .8;
+                background-color: $color-green;
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-phone-l) {
+
+}
