@@ -194,3 +194,8 @@ input:focus {
         }
     }
 }
+@media only screen and (max-width: $breakpoint-phone-p) {
+    #root footer.callout.secondary .row ul.social li:after {
+        right: -0.1em;
+    }
+}

@@ -22963,6 +22963,10 @@ input:focus {
           #root footer.callout.secondary .row ul.social li:last-child:after {
             display: none; }
 
+@media only screen and (max-width: 550px) {
+  #root footer.callout.secondary .row ul.social li:after {
+    right: -0.1em; } }
+
 @font-face {
   font-family: "Roboto-Regular";
   src: url("./fonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("./fonts/Roboto/Roboto-Regular.woff") format("woff"), url("./fonts/Roboto/Roboto-Regular.ttf") format("truetype");
